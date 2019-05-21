@@ -1,0 +1,235 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Menlo-Italic;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red83\green101\blue121;\red255\green255\blue255;\red100\green56\blue32;
+\red196\green26\blue22;\red155\green35\blue147;\red0\green0\blue0;\red92\green38\blue153;\red50\green109\blue116;
+\red36\green82\blue86;\red28\green0\blue207;\red57\green0\blue160;}
+{\*\expandedcolortbl;;\csgenericrgb\c32401\c39745\c47507;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c39147\c22031\c12446;
+\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c60759\c13753\c57628;\csgenericrgb\c0\c0\c0;\csgenericrgb\c35922\c14825\c60191;\csgenericrgb\c19418\c42935\c45455;
+\csgenericrgb\c13924\c32052\c33684;\csgenericrgb\c11000\c0\c81000;\csgenericrgb\c22454\c0\c62803;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\i\fs22 \cf2 \cb3 //
+\f1\i0\fs24 \cf0 \
+
+\f0\i\fs22 \cf2 //  main.cpp
+\f1\i0\fs24 \cf0 \
+
+\f0\i\fs22 \cf2 //  Week10Prog3
+\f1\i0\fs24 \cf0 \
+
+\f0\i\fs22 \cf2 //
+\f1\i0\fs24 \cf0 \
+
+\f0\i\fs22 \cf2 //  Created by James Lawson on 10/24/18.
+\f1\i0\fs24 \cf0 \
+
+\f0\i\fs22 \cf2 //  Copyright \'a9 2018 James Lawson. All rights reserved.
+\f1\i0\fs24 \cf0 \
+
+\f0\i\fs22 \cf2 //
+\f1\i0\fs24 \cf0 \
+\
+
+\f2\fs22 \cf4 #include \cf5 <iostream>
+\f1\fs24 \cf0 \
+
+\f3\b\fs22 \cf6 using
+\f2\b0 \cf7  
+\f3\b \cf6 namespace
+\f2\b0 \cf7  \cf8 std\cf7 ;
+\f1\fs24 \cf0 \
+\
+
+\f3\b\fs22 \cf6 class
+\f2\b0 \cf7  baseX
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7 \{
+\f1\fs24 \cf0 \
+
+\f3\b\fs22 \cf6 private
+\f2\b0 \cf7 :
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f3\b \cf6 int
+\f2\b0 \cf7  baseX;
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f1\fs24 \cf0 \
+
+\f3\b\fs22 \cf6 public
+\f2\b0 \cf7 :
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f3\b \cf6 void
+\f2\b0 \cf7  setBaseX(
+\f3\b \cf6 int
+\f2\b0 \cf7  inX)\{
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7         \cf9 baseX\cf7  = inX;
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     \}
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f3\b \cf6 int
+\f2\b0 \cf7  getBAseX()\{
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7         
+\f3\b \cf6 return
+\f2\b0 \cf7  \cf9 baseX\cf7 ;
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     \}
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7 \};
+\f1\fs24 \cf0 \
+
+\f3\b\fs22 \cf6 class
+\f2\b0 \cf7  derived1 : 
+\f3\b \cf6 public
+\f2\b0 \cf7  \cf9 baseX
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7 \{
+\f1\fs24 \cf0 \
+
+\f3\b\fs22 \cf6 private
+\f2\b0 \cf7 :
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f3\b \cf6 int
+\f2\b0 \cf7  derived1Y;
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f1\fs24 \cf0 \
+
+\f3\b\fs22 \cf6 public
+\f2\b0 \cf7 :
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f3\b \cf6 void
+\f2\b0 \cf7  setDerived1Y(
+\f3\b \cf6 int
+\f2\b0 \cf7  inY)\{
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7         \cf9 derived1Y\cf7  = inY;
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     \}
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f3\b \cf6 int
+\f2\b0 \cf7  getDerived1Y()\{
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7         
+\f3\b \cf6 return
+\f2\b0 \cf7  \cf9 derived1Y\cf7 ;
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     \}
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7 \};
+\f1\fs24 \cf0 \
+\
+
+\f3\b\fs22 \cf6 class
+\f2\b0 \cf7  derived2 : 
+\f3\b \cf6 public
+\f2\b0 \cf7  \cf9 baseX
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7 \{
+\f1\fs24 \cf0 \
+
+\f3\b\fs22 \cf6 private
+\f2\b0 \cf7 :
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f3\b \cf6 int
+\f2\b0 \cf7  derived2Z;
+\f1\fs24 \cf0 \
+
+\f3\b\fs22 \cf6 public
+\f2\b0 \cf7 :
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f3\b \cf6 void
+\f2\b0 \cf7  setDerived2Z(
+\f3\b \cf6 int
+\f2\b0 \cf7  inZ)\{
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7         \cf9 derived2Z\cf7  = inZ;
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     \}
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f3\b \cf6 int
+\f2\b0 \cf7  getDerived2Z()\{
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7         
+\f3\b \cf6 return
+\f2\b0 \cf7  \cf9 derived2Z\cf7 ;
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     \}
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7 \};
+\f1\fs24 \cf0 \
+\
+
+\f3\b\fs22 \cf6 int
+\f2\b0 \cf7  main()\{
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     \cf9 derived1\cf7  D1;
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     D1.\cf10 setDerived1Y\cf7 (\cf11 31\cf7 );
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     D1.\cf10 setBaseX\cf7 (\cf11 42\cf7 );
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     \cf8 cout\cf7  << \cf5 "x = "\cf7  << D1.\cf10 getBAseX\cf7 () << \cf12 endl\cf7 ;
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     \cf8 cout\cf7  << \cf5 "y = "\cf7  << D1.\cf10 getDerived1Y\cf7 () << \cf12 endl\cf7 ;
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7     
+\f3\b \cf6 return
+\f2\b0 \cf7  \cf11 0\cf7 ;
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf7 \}}

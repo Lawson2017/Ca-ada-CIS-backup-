@@ -1,0 +1,287 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Menlo-Italic;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red83\green101\blue121;\red255\green255\blue255;\red100\green56\blue32;
+\red196\green26\blue22;\red155\green35\blue147;\red0\green0\blue0;\red92\green38\blue153;\red50\green109\blue116;
+\red36\green82\blue86;\red28\green0\blue207;\red57\green0\blue160;}
+{\*\expandedcolortbl;;\csgenericrgb\c32401\c39745\c47507;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c39147\c22031\c12446;
+\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c60759\c13753\c57628;\csgenericrgb\c0\c0\c0;\csgenericrgb\c35922\c14825\c60191;\csgenericrgb\c19418\c42935\c45455;
+\csgenericrgb\c13924\c32052\c33684;\csgenericrgb\c11000\c0\c81000;\csgenericrgb\c22454\c0\c62803;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\i\fs22 \cf2 \cb3 //
+\f1\i0\fs24 \cf0 \
+
+\f0\i\fs22 \cf2 //  main.cpp
+\f1\i0\fs24 \cf0 \
+
+\f0\i\fs22 \cf2 //  Week18ExtraCredit
+\f1\i0\fs24 \cf0 \
+
+\f0\i\fs22 \cf2 //
+\f1\i0\fs24 \cf0 \
+
+\f0\i\fs22 \cf2 //  Created by James Lawson on 5/19/19.
+\f1\i0\fs24 \cf0 \
+
+\f0\i\fs22 \cf2 //  Copyright \'a9 2019 James Lawson. All rights reserved.
+\f1\i0\fs24 \cf0 \
+
+\f0\i\fs22 \cf2 //
+\f1\i0\fs24 \cf0 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf4 \cb3 #include \cf5 \cb3 <iostream>
+\f1\fs24 \cf0 \
+
+\f2\fs22 \cf4 \cb3 #include \cf5 \cb3 <string>
+\f1\fs24 \cf0 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f3\b\fs22 \cf6 \cb3 using
+\f2\b0 \cf7 \cb3  
+\f3\b \cf6 \cb3 namespace
+\f2\b0 \cf7 \cb3  \cf8 \cb3 std\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+\
+
+\f3\b\fs22 \cf6 \cb3 class
+\f2\b0 \cf7 \cb3  Car \{
+\f1\fs24 \cf0 \cb3 \
+
+\f3\b\fs22 \cf6 \cb3 private
+\f2\b0 \cf7 \cb3 :
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf7 \cb3     \cf8 \cb3 string\cf7 \cb3  color, ownerName, modelName, currentGear, currentState;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     
+\f3\b \cf6 \cb3 double
+\f2\b0 \cf7 \cb3  currentCharge;
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f3\b\fs22 \cf6 \cb3 public
+\f2\b0 \cf7 \cb3 :
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf7 \cb3     
+\f3\b \cf6 \cb3 void
+\f2\b0 \cf7 \cb3  setColor(\cf8 \cb3 string\cf7 \cb3  newColor)\{
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3         \cf9 \cb3 color\cf7 \cb3  = newColor;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \cf8 \cb3 string\cf7 \cb3  getColor()\{
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3         
+\f3\b \cf6 \cb3 return
+\f2\b0 \cf7 \cb3  \cf9 \cb3 color\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     
+\f3\b \cf6 \cb3 void
+\f2\b0 \cf7 \cb3  setName(\cf8 \cb3 string\cf7 \cb3  newName)\{
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3         \cf9 \cb3 ownerName\cf7 \cb3  = newName;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \cf8 \cb3 string\cf7 \cb3  getName()\{
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3         
+\f3\b \cf6 \cb3 return
+\f2\b0 \cf7 \cb3  \cf9 \cb3 ownerName\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     
+\f3\b \cf6 \cb3 void
+\f2\b0 \cf7 \cb3  setModel(\cf8 \cb3 string\cf7 \cb3  newModel)\{
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3         \cf9 \cb3 modelName\cf7 \cb3  = newModel;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \cf8 \cb3 string\cf7 \cb3  getModel()\{
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3         
+\f3\b \cf6 \cb3 return
+\f2\b0 \cf7 \cb3  \cf9 \cb3 modelName\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     
+\f3\b \cf6 \cb3 void
+\f2\b0 \cf7 \cb3  setGear(\cf8 \cb3 string\cf7 \cb3  newGear)\{
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3         \cf9 \cb3 currentGear\cf7 \cb3  = newGear;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \cf8 \cb3 string\cf7 \cb3  getGear()\{
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3         
+\f3\b \cf6 \cb3 return
+\f2\b0 \cf7 \cb3  \cf9 \cb3 currentGear\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     
+\f3\b \cf6 \cb3 void
+\f2\b0 \cf7 \cb3  setState(\cf8 \cb3 string\cf7 \cb3  newState)\{
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3         \cf9 \cb3 currentState\cf7 \cb3  = newState;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \cf8 \cb3 string\cf7 \cb3  getState()\{
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3         
+\f3\b \cf6 \cb3 return
+\f2\b0 \cf7 \cb3  \cf9 \cb3 currentState\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     
+\f3\b \cf6 \cb3 void
+\f2\b0 \cf7 \cb3  setCharge(
+\f3\b \cf6 \cb3 int
+\f2\b0 \cf7 \cb3  newCharge)\{
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3         \cf9 \cb3 currentCharge\cf7 \cb3  = newCharge;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     
+\f3\b \cf6 \cb3 int
+\f2\b0 \cf7 \cb3  getCharge()\{
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3         
+\f3\b \cf6 \cb3 return
+\f2\b0 \cf7 \cb3  \cf9 \cb3 currentCharge\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3 \};
+\f1\fs24 \cf0 \cb3 \
+\
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f3\b\fs22 \cf6 \cb3 int
+\f2\b0 \cf7 \cb3  main()\{
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf7 \cb3     
+\f0\i \cf2 \cb3 // step 2
+\f1\i0\fs24 \cf0 \
+
+\f2\fs22 \cf7 \cb3     \cf9 \cb3 Car\cf7 \cb3  C;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     C.\cf10 \cb3 setColor\cf7 \cb3 (\cf5 \cb3 "red"\cf7 \cb3 );
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     C.\cf10 \cb3 setName\cf7 \cb3 (\cf5 \cb3 "Tuyet Nguyen"\cf7 \cb3 );
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     C.\cf10 \cb3 setModel\cf7 \cb3 (\cf5 \cb3 "Tesla"\cf7 \cb3 );
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     C.\cf10 \cb3 setCharge\cf7 \cb3 (\cf11 100\cf7 );
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     C.\cf10 \cb3 setGear\cf7 \cb3 (\cf5 \cb3 "park"\cf7 \cb3 );
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     C.\cf10 \cb3 setState\cf7 \cb3 (\cf5 \cb3 "off"\cf7 \cb3 );
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     
+\f0\i \cf2 \cb3 // step 3
+\f1\i0\fs24 \cf0 \
+
+\f2\fs22 \cf7 \cb3     C.\cf10 \cb3 setState\cf7 \cb3 (\cf5 \cb3 "on"\cf7 \cb3 );
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     C.\cf10 \cb3 setGear\cf7 \cb3 (\cf5 \cb3 "drive"\cf7 \cb3 );
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     C.\cf10 \cb3 setGear\cf7 \cb3 (\cf5 \cb3 "park"\cf7 \cb3 );
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     C.\cf10 \cb3 setState\cf7 \cb3 (\cf5 \cb3 "off"\cf7 \cb3 );
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \cf8 \cb3 cout\cf7 \cb3  << \cf5 \cb3 "Owner's name: "\cf7 \cb3  << C.\cf10 \cb3 getName\cf7 \cb3 () << \cf12 \cb3 endl\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \cf8 \cb3 cout\cf7 \cb3  << \cf5 \cb3 "Model: "\cf7 \cb3  << C.\cf10 \cb3 getModel\cf7 \cb3 () << \cf12 \cb3 endl\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \cf8 \cb3 cout\cf7 \cb3  << \cf5 \cb3 "Color: "\cf7 \cb3  << C.\cf10 \cb3 getColor\cf7 \cb3 () << \cf12 \cb3 endl\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \cf8 \cb3 cout\cf7 \cb3  << \cf5 \cb3 "Current Charge: "\cf7 \cb3  << C.\cf10 \cb3 getCharge\cf7 \cb3 () << \cf12 \cb3 endl\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \cf8 \cb3 cout\cf7 \cb3  << \cf5 \cb3 "Current Gear: "\cf7 \cb3  << C.\cf10 \cb3 getGear\cf7 \cb3 () << \cf12 \cb3 endl\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     \cf8 \cb3 cout\cf7 \cb3  << \cf5 \cb3 "Current State: "\cf7 \cb3  << C.\cf10 \cb3 getState\cf7 \cb3 () << \cf12 \cb3 endl\cf7 \cb3 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3     
+\f3\b \cf6 \cb3 return
+\f2\b0 \cf7 \cb3  \cf11 0\cf7 ;
+\f1\fs24 \cf0 \cb3 \
+
+\f2\fs22 \cf7 \cb3 \}
+\f1\fs24 \cf0 \cb3 \
+}
